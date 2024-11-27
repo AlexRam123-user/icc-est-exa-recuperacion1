@@ -29,7 +29,8 @@ public class PersonaController {
     }
 
     public int buscarPorEdad(Persona[] personas, int edadBuscada) {
-        int inicio = 0, fin = personas.length - 1;
+        int inicio = 0;
+        int fin = personas.length - 1;
         while (inicio <= fin) {
             int medio = (inicio + fin) / 2;
             if (personas[medio].edad == edadBuscada) {
@@ -57,7 +58,8 @@ public class PersonaController {
     }
 
     public int buscarPorNombre(Persona[] personas, String nombreBuscado) {
-        int inicio = 0, fin = personas.length - 1;
+        int inicio = 0;
+        int fin = personas.length - 1;
         while (inicio <= fin) {
             int medio = (inicio + fin) / 2;
             int comparacion = personas[medio].nombre.compareTo(nombreBuscado);
